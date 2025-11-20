@@ -4,10 +4,55 @@
   <meta charset="UTF-8" />
   <title>The Stamper Collator</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      font-family: serif;
+      background-color: #0B0B0E;
+      color: #F5F5DC;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+    h1 { color: #D4AF37; }
+    form {
+      margin-top: 2rem;
+      background: #1A1A1D;
+      padding: 2rem;
+      border-radius: 8px;
+    }
+    input[type="file"] {
+      margin-bottom: 1rem;
+      color: #F5F5DC;
+    }
+    button {
+      padding: 0.75rem 1.5rem;
+      background: #6B7C59;
+      color: #F5F5DC;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover { background: #9B8BA3; }
+    a {
+      margin-top: 2rem;
+      display: inline-block;
+      color: #F5F5DC;
+      text-decoration: none;
+    }
+  </style>
 </head>
-<body style="background:#0B0B0E; color:#F5F5DC; font-family:serif; text-align:center; min-height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center;">
-  <h1 style="color:#D4AF37;">Upload Your Writing</h1>
-  <p>Collator tool coming soon…</p>
-  <a href="/" style="margin-top:1rem; padding:0.75rem 1.5rem; background:#6B7C59; color:#F5F5DC; text-decoration:none; border-radius:8px;">Back to Home</a>
+<body>
+  <h1>Upload Your Writing</h1>
+  <p>Choose a file to collate and showcase.</p>
+  <form>
+    <input type="file" />
+    <br />
+    <button type="submit">Submit</button>
+  </form>
+  <a href="/">← Back to Home</a>
 </body>
 </html>
